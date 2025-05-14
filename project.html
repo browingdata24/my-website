@@ -1,0 +1,470 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="project.css"> 
+</head>
+<body style="padding-bottom: 5rem;">
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <img src="image 1.jpeg" alt="Logo" />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="submenu">
+                        <li class="dropdown">
+                            <a href="#">JEE Mains</a>
+                            <ul class="submenu">
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#jeeMainsModal">Watch Video</a></li>
+                    </ul>
+                </li>
+                        <li class="dropdown">
+                            <a href="#">JEE Advance</a>
+                            <ul class="submenu">
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#jeeAdvanceModal">Watch Video</a></li>
+                    </ul>
+                </li>
+                        <li class="dropdown">
+                            <a href="#">NEET</a>
+                            <ul class="submenu">
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#neetModal">Watch Video</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="submenu">
+                        <li class="dropdown">
+                            <a href="#">CBSE</a>
+                            <ul class="submenu">
+                                <li class="dropdown">
+                                <a href="#">Class 9</a>
+                            <ul class="submenu">
+                                <li><a href="class 9th maths notes.pdf" target="_blank">Maths</a></li>
+                                <li><a href="class 9th science notes.pdf" target="_blank">Science</a></li>
+                            </ul>
+                        </li>
+                            <li class="dropdown">
+                                <a href="#">Class 10</a>
+                                <ul class="submenu">
+                                    <li><a href="class 10th science notes.pdf" target="_blank">Maths</a></li>
+                                    <li><a href="class 10th maths notes.pdf" target="_blank">Science</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Class 11</a>
+                                <ul class="submenu">
+                                    <li><a href="class 11th Biology notes.pdf" target="_blank">Biology</a></li>
+                                    <li><a href="class 11th maths notes.pdf" target="_blank">Maths</a></li>
+                                    <li><a href="class 11th chemistry notes.pdf" target="_blank">chemistry</a></li>
+                                    <li><a href="class 11th physics notes.pdf" target="_blank">physics</a></li>
+                                </ul>
+                            </li>                                
+                            <li class="dropdown">
+                                <a href="#">Class 12</a>
+                                <ul class="submenu">
+                                    <li><a href="class 12th Biology notes.pdf" target="_blank">Biology</a></li>
+                                    <li><a href="class 12th maths notes.pdf" target="_blank">maths</a></li>
+                                    <li><a href="class 12th chemistry notes.pdf" target="_blank">chemistry</a></li>
+                                    <li><a href="class 12th Physics notes.pdf" target="_blank">Physics</a></li>
+                                </ul>
+                            </li>
+                        </ul>   
+                    </li>
+                </ul>
+            </li>
+                <li class="dropdown">
+                    <a href="#">PYQ</a>
+                    <ul class="submenu">
+                        <li class="dropdown">
+                        <a href="#">JEE Mains</a>
+                    <ul class="submenu">
+                        <li><a href="2020 (JEE MAINS).pdf" target="_blank">2020</a></li>
+                        <li><a href="2021 (JEE MAINS).pdf" target="_blank">2021</a></li>
+                        <li><a href="2022 (JEE MAINS).pdf" target="_blank">2022</a></li>
+                        <li><a href="2023 (JEE MAINS).pdf" target="_blank">2023</a></li>
+                        <li><a href="2024 (JEE MAINS).pdf" target="_blank">2024</a></li>
+                    </ul>
+                </li>
+                       <li class="dropdown">
+                        <a href="#">JEE Advance</a>
+                    <ul class="submenu">
+                        <li><a href="2020 (JEE ADVANCED).pdf" target="_blank">2020</a></li>
+                        <li><a href="2021 (JEE ADVANCED).pdf" target="_blank">2021</a></li>
+                        <li><a href="2022 (JEE ADVANCED).pdf" target="_blank">2022</a></li>
+                        <li><a href="2023 (JEE ADVANCED).pdf" target="_blank">2023</a></li>
+                        <li><a href="2024 (JEE ADVANCED).pdf" target="_blank">2024</a></li>
+                    </ul>
+                </li>                    <li class="dropdown">
+                        <a href="#">NEET</a>
+                        <ul class="submenu">
+                            <li><a href="2020 (NEET).pdf" target="_blank">2020</a></li>
+                            <li><a href="2021 (NEET).pdf" target="_blank">2021</a></li>
+                            <li><a href="2022 (NEET) (1).pdf" target="_blank">2022</a></li>
+                            <li><a href="2023 (NEET).pdf" target="_blank">2023</a></li>
+                            <li><a href="2024 (NEET).pdf" target="_blank">2024</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>                
+                <li class="dropdown">
+                    <a href="#">Books</a>
+                    <ul class="submenu">
+                <li class="dropdown">
+                    <a href="#">CBSE</a>
+                    <ul class="submenu">
+                        <li class="dropdown">
+                        <a href="#">Class 9</a>
+                    <ul class="submenu">
+                        <li><a href="class 9 maths.pdf" target="_blank">Maths</a></li>
+                        <li><a href="class 9 science.pdf" target="_blank">Science</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                        <a href="#">Class 10</a>
+                    <ul class="submenu">
+                        <li><a href="10th maths.pdf" target="_blank">Maths</a></li>
+                        <li><a href="Class-10-Science.pdf" target="_blank">Science</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                        <a href="#">Class 11</a>
+                    <ul class="submenu">
+                        <li><a href="Class-11-Physics-Part-1.pdf" target="_blank">Physics - Part 1</a></li>
+                        <li><a href="Class-11-Physics-Part-2.pdf" target="_blank">Physics - Part 2</a></li>
+                        <li><a href="Class-11-Chemistry-Part-1.pdf" target="_blank">Chemistry - Part 1</a></li>
+                        <li><a href="Class-11-Chemistry-Part-2.pdf" target="_blank">Chemistry - Part 2</a></li>
+                        <li><a href="maths class 11th.pdf" target="_blank">Maths</a></li>
+                        <li><a href="class 11th Biology.pdf" target="_blank">Biology</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                        <a href="#">Class 12</a>
+                    <ul class="submenu">
+                        <li><a href="Class-12-Physics-Part-1.pdf" target="_blank">Physics - Part 1</a></li>
+                        <li><a href="Class-12-Physics-Part-2.pdf" target="_blank">Physics - Part 2</a></li>
+                        <li><a href="Class-12-Chemistry-Part-1.pdf" target="_blank">Chemistry - Part 1</a></li>
+                        <li><a href="Class-12-Chemistry-Part-2.pdf" target="_blank">Chemistry - Part 2</a></li>
+                        <li><a href="maths Part1-Class-12.pdf" target="_blank">Maths - Part 1</a></li>
+                        <li><a href="maths-Class-12-Part-2.pdf" target="_blank">Maths - Part 2</a></li>
+                        <li><a href="class 12th Biology.pdf" target="_blank">Biology</a></li>
+                    </ul>
+                </li>
+            </ul>   
+        </li>
+    </ul>
+</li>
+            </ul>
+            <a href="#" class="btn">login</a>
+        </div>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin: 4rem auto; width: 100%;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image 2.png" class="d-block w-100" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="image 3.png" class="d-block w-100" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="image 4.png" class="d-block w-100" alt="Third slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="jeeMainsModal" tabindex="-1" aria-labelledby="jeeMainsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jeeMainsModalLabel">JEE Mains Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/JttxThXtuwk?si=maQAtBGSoU7d3KG9" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="jeeAdvanceModal" tabindex="-1" aria-labelledby="jeeAdvanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jeeAdvanceModalLabel">JEE Advance Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/mHfIfA4msiE?si=vqf_3Fr1qvDUHSA2" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="neetModal" tabindex="-1" aria-labelledby="neetModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="neetModalLabel">NEET Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/3aTNNJ7FHlw?si=qay05YoYx29_NaDw" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body></html>
+<div style="margin: 2rem auto; text-align: center; width: 80%;">
+    <img src="image 5.png" alt="Below Carousel Image" style="max-width: 50%; height: 50%; border-radius: 10px;">
+</div>
+<center><h1 style="color: var(--primary-color); margin-top: 5rem 0 2rem;">Topper's Interview</h1></center>
+    <div class="service-sec">
+        <div class="row">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Topper Interview 1</h3>
+                    <div class="video-wrapper">
+                <iframe width="100%" height="150" src="https://www.youtube.com/embed/yO08NbGp6eI" frameborder="0" allowfullscreen></iframe>
+                </div>
+             </div>
+        </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-bar"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Topper Interview 2</h3>
+                    <div class="video-wrapper">
+                <iframe width="100%" height="150" src="https://www.youtube.com/embed/3jP8FVL7LWI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Topper Interview 3</h3>
+                    <div class="video-wrapper">
+                <iframe width="100%" height="150" src="https://www.youtube.com/embed/pL3lJo--sTo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Topper Interview 4</h3>
+                    <div class="video-wrapper">
+                <iframe width="100%" height="150" src="https://www.youtube.com/embed/uvMQbs-pBNw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<center><h1 style="color:var(--primary-color); margin-top: 12rem;">Syllabus PDF's</h1></center>
+    <div class="service-sec">
+    <div class="row">
+        <div class="card">
+            <div class="icon">
+                <i class="fa-solid fa-book"></i>
+            </div>
+            <div class="card-body">
+                <h3>JEE Mains</h3>
+                <p>Click below to view or download the JEE Mains Syllabus.</p>
+                <a class="btn" href="JEE mains syllabus.pdf" target="_blank">View PDF</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="card-body">
+                <h3>JEE Advance</h3>
+                <p>Click below to view or download the JEE Advance Syllabus.</p>
+                <a class="btn" href="JEE Advance.pdf" target="_blank">View PDF</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <div class="card-body">
+                <h3>NEET</h3>
+                <p>Click below to view or download the NEET Syllabus.</p>
+                <a class="btn" href="NEET.pdf" target="_blank">View PDF</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="study-resources">
+  <div class="container">
+    <h1 class="text-center mb-4">Study Resources</h1>
+    <p class="text-center mb-5 text-muted">Find all key academic materials to boost your preparation.</p>    
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="resource-box notes-box">
+          <img src="new image 1.webp" alt="Notes" style="height:150px;">
+          <h4>Notes</h4>
+          <p>Explore well-structured handwritten and typed notes for JEE, NEET, and CBSE from Class 9 to 12.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="resource-box books-box">
+          <img src="new image 2.webp" alt="Books" style="height:150px;">
+          <h4>Books</h4>
+          <p>Download NCERT, reference books, and other standard materials in PDF format for all boards and exams.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="resource-box pyqs-box">
+          <img src="new image 3.webp" alt="PYQs" style="height:150px;">
+          <h4>PYQs</h4>
+          <p>Access previous year question papers (PYQs) for JEE Mains, JEE Advanced, and NEET exams.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq-section" style="background: #111; color: white; padding: 4rem 2rem;">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: var(--primary-color);">Frequently Asked Questions (FAQ)</h2>
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item" style="background-color: #1e1e2f; border: none; color: white;">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Where can I find JEE/NEET notes?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can access all notes from Class 9–12 for JEE, NEET, and CBSE in the "Resources > CBSE" section of the navigation menu.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" style="background-color: #1e1e2f; border: none; color: white;">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Are the books available for free download?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, all NCERT and reference books are available in PDF format and free to download under the “Books” section.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" style="background-color: #1e1e2f; border: none; color: white;">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            How can I prepare with PYQs?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Go to the “PYQ” section and choose your exam (JEE Mains, Advanced, or NEET). Download previous year papers from 2020 to 2024.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item" style="background-color: #1e1e2f; border: none; color: white;">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Can I watch topper interviews on the site?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! Scroll down to the “Topper’s Interview” section where curated YouTube interviews are embedded.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" style="background-color: #1e1e2f; border: none; color: white;">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            Is registration required to access the content?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            No login is required to view or download study materials. Everything is publicly available for free.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer style="background-color: black; padding: 2rem 0;">
+  <div style="max-width: 450px; margin: 0 auto; text-align: center;">
+    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Contact Us</h4>
+    
+    <div style="margin-bottom: 1rem;">
+      <a href="https://www.linkedin.com/in/-Sakshi S" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+
+    <p style="color: white; font-size: 16px; margin-bottom: 0.5rem;">Share Your Resources With Us</p>
+
+    <a href="mailto:pooja087btcsai21@igdtuw.ac.in" class="btn"
+       style="background: var(--primary-color); color: white; padding: 0.4rem 1.2rem; border-radius: 6px; display: inline-block; margin-bottom: 1.2rem;">
+      E-MAIL
+    </a>
+
+    <p style="color: gray; font-size: 13px; margin: 0;">&copy; Copyright, Your Website Name</p>
+  </div>
+</footer>
+<div id="ai-button" onclick="toggleChat()" style="position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 15px var(--primary-color); cursor: pointer; z-index: 1000;">
+  <i class="fa-solid fa-robot" style="font-size: 24px;"></i>
+</div>
+
+<div id="chat-box" style="display: none; position: fixed; bottom: 100px; right: 30px; width: 300px; height: 400px; background: #1e1e2f; border-radius: 10px; box-shadow: 0 0 15px var(--primary-color); z-index: 1000; overflow: hidden;">
+  <div style="background: var(--primary-color); padding: 1rem; color: white; font-weight: bold;">Ask Your Doubts</div>
+  <div style="padding: 1rem; height: 280px; overflow-y: auto; color: white; font-size: 14px;">
+    <p>Hello! 👋 I'm your AI assistant. Type your doubt below.</p>
+  </div>
+  <div style="padding: 0.5rem; border-top: 1px solid #444;">
+    <input type="text" id="chat-input" placeholder="Type your doubt..." style="width: 80%; padding: 0.3rem; border: none; border-radius: 4px;">
+    <button onclick="sendMessage()" style="background: var(--primary-color); color: white; border: none; padding: 0.3rem 0.6rem; border-radius: 4px;">Send</button>
+  </div>
+</div>
+<script src="project.js"></script>
+</body></html>
