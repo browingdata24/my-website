@@ -598,3 +598,47 @@ footer a:hover {
   color: var(--primary-color);
   transition: 0.3s;
 }
+.home {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.home p {
+    max-width: 800px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+.about {
+    background-color: #1e1e2f;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.about h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.about ul {
+    margin-left: 2rem;
+    list-style: disc;
+    color: #ccc;
+}
