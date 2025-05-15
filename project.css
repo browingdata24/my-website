@@ -34,8 +34,8 @@ body {
 }
 
 header {
-    padding-bottom: 2rem;
-    border-bottom: 3px solid var(--primary-col)
+    
+    border-bottom: 2px solid #767676;
 }
 
 .hello {
@@ -50,12 +50,16 @@ header {
 }
 
 header .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: ghostwhite;
     padding: 0 3rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .btn {
