@@ -1,4 +1,4 @@
- *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -52,24 +52,28 @@ header {
 header .navbar {
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: ghostwhite;
-    padding: 0 3rem; 
+    background-color: whitesmoke;
+    padding: 0 15rem; 
 }
 
 .navbar .btn {
     z-index: 9;
 }
 
+.navbar .logo {
+    margin-right: auto; 
+}
+
 .navbar .logo img {
     height: 60px;
-    width: auto;
+    width: 80px;
 }
 
 .navbar .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     height: 80px;
 }
