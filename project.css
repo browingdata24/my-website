@@ -1,4 +1,6 @@
-*{
+[11:18 PM, 5/15/2025] Sakshi: css bhejo
+[11:18 PM, 5/15/2025] Sakshi: or html bhi old vala
+[11:18 PM, 5/15/2025] Pooja Saini: *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,7 +37,7 @@ body {
 
 header {
     padding-bottom: 2rem;
-    border-bottom: 2px solid #767676;
+    border-bottom: 3px solid var(--primary-col)
 }
 
 .hello {
@@ -56,7 +58,6 @@ header .navbar {
     align-items: center;
     background-color: ghostwhite;
     padding: 0 3rem; 
-
 }
 
 .navbar .btn {
@@ -594,4 +595,112 @@ display: flex;justify-content: center;
 footer a:hover {
   color: var(--primary-color);
   transition: 0.3s;
+}
+
+#ai-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px var(--primary-color);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#ai-button i {
+  font-size: 24px;
+}
+
+#chat-box {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 300px;
+  height: 400px;
+  background: #1e1e2f;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--primary-color);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#chat-box input {
+  width: 80%;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 4px;
+}
+
+#chat-box button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.about-section {
+  background-color: pink;
+  padding: 4rem 2rem;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.about-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.about-left .subheading {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.about-left p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.about-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
