@@ -50,7 +50,7 @@ header {
 }
 
 header .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     height: 80px;
